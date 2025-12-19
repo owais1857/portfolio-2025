@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50 selection:bg-blue-200 font-sans text-slate-900">
-
+      
       {/* Background Grid Pattern */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
@@ -22,7 +22,7 @@ export default function Home() {
       </nav>
 
       <main className="relative z-10 max-w-6xl mx-auto px-6 pt-20">
-
+        
         {/* Hero Section */}
         <motion.header 
           initial={{ opacity: 0, y: 20 }}
@@ -40,7 +40,7 @@ export default function Home() {
             I am <b>Mohammad Owais</b>, a <b>GATE 2025 (DA)</b> qualified engineer. 
             I specialize in <b>Semantic Search</b>, <b>NLP</b>, and building scalable <b>AI Backends</b>.
           </p>
-
+          
           <div className="flex flex-wrap gap-4">
             <a 
               href="/resume.pdf" 
@@ -67,8 +67,10 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight">Featured Engineering</h2>
             <span className="hidden md:block text-sm text-slate-500 font-mono">SELECTED WORKS 2024-25</span>
           </div>
-
+          
           <div className="grid md:grid-cols-2 gap-6">
+            
+            {/* Project 1: Gaming Search Engine (Updated Link) */}
             <Card>
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-2xl font-bold text-slate-800">Gaming Search Engine</h3>
@@ -82,24 +84,45 @@ export default function Home() {
                   <span key={tag} className="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">{tag}</span>
                 ))}
               </div>
-              <a href="https://github.com/owais1857" target="_blank" className="text-blue-600 font-bold text-sm hover:underline">View Architecture →</a>
+              {/* LINK UPDATED HERE */}
+              <a href="https://github.com/owais1857/gaming-search-new" target="_blank" className="text-blue-600 font-bold text-sm hover:underline">View Architecture →</a>
             </Card>
 
+            {/* Project 2: Food Classification */}
             <Card>
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-2xl font-bold text-slate-800">CNN Image Classifier</h3>
                 <span className="bg-blue-100 text-blue-700 text-xs font-bold px-2 py-1 rounded">DEEP LEARNING</span>
               </div>
               <p className="text-slate-600 mb-6">
-                High-accuracy image classification model built with <b>TensorFlow</b>. Implements advanced data augmentation to prevent overfitting.
+                High-accuracy image classification model built with <b>TensorFlow</b>. Processed labeled datasets to improve model generalization.
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {["TensorFlow", "Keras", "Python", "NumPy"].map(tag => (
                   <span key={tag} className="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">{tag}</span>
                 ))}
               </div>
-              <a href="https://github.com/owais1857" target="_blank" className="text-blue-600 font-bold text-sm hover:underline">View Source →</a>
+              <a href="https://github.com/safwannazir923/FoodClassificationProject" target="_blank" className="text-blue-600 font-bold text-sm hover:underline">View Repository →</a>
             </Card>
+
+            {/* Project 3: Hackathon Project */}
+            <Card className="md:col-span-2 border-orange-200">
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-2xl font-bold text-slate-800">IUST Binary Ninjas (Hackathon)</h3>
+                <span className="bg-orange-100 text-orange-700 text-xs font-bold px-2 py-1 rounded">GEOLOCATION API</span>
+              </div>
+              <p className="text-slate-600 mb-6">
+                Developed the <b>&quot;Nearby Bookstore&quot;</b> feature using the <b>OpenStreetMap API</b> to provide real-time geospatial recommendations. 
+                Managed core backend logic to handle API requests and data retrieval efficiently.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {["OpenStreetMap API", "Python", "Backend Logic", "Rapid Prototyping"].map(tag => (
+                  <span key={tag} className="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">{tag}</span>
+                ))}
+              </div>
+              <a href="https://github.com/andinolabs-hackathon/iust-binary-ninjas" target="_blank" className="text-blue-600 font-bold text-sm hover:underline">View Hackathon Submission →</a>
+            </Card>
+
           </div>
         </section>
 
