@@ -30,15 +30,18 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="mb-24 max-w-3xl"
         >
+          {/* UPDATED STATUS BADGE */}
           <div className="inline-block px-3 py-1 mb-6 text-xs font-bold tracking-wider text-blue-600 uppercase bg-blue-100 rounded-full">
-            Available for Internships
+            Ready to Collaborate
           </div>
+          
           <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight text-slate-900">
             Building <span className="text-blue-600">Intelligent</span> Systems.
           </h1>
-          <p className="text-xl text-slate-600 leading-relaxed mb-8">
-            I am <b>Mohammad Owais</b>, a <b>GATE 2025 (DA)</b> qualified engineer. 
-            I specialize in <b>Semantic Search</b>, <b>NLP</b>, and building scalable <b>AI Backends</b>.
+          
+          {/* UPDATED BIO / HEADLINE */}
+          <p className="text-xl text-slate-600 leading-relaxed mb-8 font-medium">
+            Aspiring AI & Data Science Professional | B.Tech CSE | GATE 2025 Qualified (DA)
           </p>
           
           <div className="flex flex-wrap gap-4">
@@ -70,7 +73,7 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 gap-6">
             
-            {/* Project 1: Gaming Search Engine (Updated Link) */}
+            {/* Project 1: Gaming Search Engine */}
             <Card>
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-2xl font-bold text-slate-800">Gaming Search Engine</h3>
@@ -84,7 +87,6 @@ export default function Home() {
                   <span key={tag} className="text-xs font-mono bg-slate-100 text-slate-600 px-2 py-1 rounded">{tag}</span>
                 ))}
               </div>
-              {/* LINK UPDATED HERE */}
               <a href="https://github.com/owais1857/gaming-search-new" target="_blank" className="text-blue-600 font-bold text-sm hover:underline">View Architecture →</a>
             </Card>
 
