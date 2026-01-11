@@ -46,7 +46,7 @@ export default function Home() {
           
           <div className="flex flex-wrap gap-4">
             <a 
-              href="/final-resume.pdf" 
+              href="/resume.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-slate-900 text-white px-6 py-3 rounded-lg font-bold hover:bg-slate-800 transition shadow-lg shadow-blue-900/20 flex items-center gap-2"
